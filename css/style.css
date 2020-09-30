@@ -4,15 +4,14 @@
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    
+    width: 100%;
     
 }
 /***********Navbar Styles*************/
 #header_area{
     width: 100%;
-    height:700px;
    margin: 0;
-   background-image: url("../images/header.png"); 
+   
 }
 #header_area .container h4{
     font-weight: 400;
@@ -75,10 +74,24 @@ body{
 /*Shouts*/
 
 #shouts{
+    margin-top: -108px;
     font-family: 'Playfair Display', serif; 
-    margin: 45px;  
+    width: 100%;
+    height: 700px;
+    background: url("../images/top.png") no-repeat  center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
 }
+#shouts .row{
+   
+   padding-top: 185px;
+}
+
+
 #shouts .text-center .blockquote{
+    
     font-size: 50px;
     color:#000000 ;
 }
@@ -94,3 +107,17 @@ body{
 
 
 /************Navbar styles ends*****************/
+
+/***********Slider Style********/
+#slider{
+    margin-top:30px ;
+    
+}
+#slider .container{
+    width: 1030px;
+    height: 600px;
+}
+#slider .container img{
+    width: 1030px;
+    height: 600px;
+}
