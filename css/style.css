@@ -1,0 +1,96 @@
+/*Import fonts from fonts.css file*/
+/*font-family: 'Playfair Display', serif;*/
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    
+}
+/***********Navbar Styles*************/
+#header_area{
+    width: 100%;
+    height:700px;
+   margin: 0;
+   background-image: url("../images/header.png"); 
+}
+#header_area .container h4{
+    font-weight: 400;
+    font: bold;
+    
+}
+#header_area .row{
+    padding-top:35px;
+}
+#header_area h4{
+    font-size: 34px;
+
+}
+
+#header_area .col-sm-6 ul li a{
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    transition: 0.5s;
+}
+#header_area .col-sm-6 ul li a:hover{
+    background:#00b0ff ;
+    color: #fff;
+
+}
+#header_area .social_area{
+  
+    width: 100%;
+    clear: both;
+}
+#header_area .social_area ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#header_area .social_area ul li{
+    display: inline-block;
+    padding-right: 10px;
+  
+    
+}
+#header_area .social_area ul li a{
+    font-size: 15px;
+    font-weight: 400;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    color: black;
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;/*It makes circle*/
+    transition: 0.5s;
+}
+#header_area .social_area ul li a:hover{  
+    background: black;
+    color: #fff;
+
+}
+/*Shouts*/
+
+#shouts{
+    font-family: 'Playfair Display', serif; 
+    margin: 45px;  
+}
+#shouts .text-center .blockquote{
+    font-size: 50px;
+    color:#000000 ;
+}
+#shouts .text-center .quote-footer{
+    font-size: 24px;
+    color:#e4edf0;
+    font-weight: 400;
+    margin: -20px;
+}
+
+
+
+
+
+/************Navbar styles ends*****************/
