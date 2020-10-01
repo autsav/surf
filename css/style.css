@@ -121,3 +121,312 @@ body{
     width: 1030px;
     height: 600px;
 }
+
+/*About us style*/
+#about-us{
+    
+    height: 450px;
+    width: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+#about-us .container{
+    margin-top: -108px;
+    font-family: 'Playfair Display', serif; 
+    width: 100%;
+    height: 100%;
+    background: url("../images/about-us.png") no-repeat  center ; 
+       
+}
+
+/*About Surfboard and video player*/
+#surf-background{
+    margin-top: -328px;
+    font-family: 'Playfair Display', serif; 
+    width: 100%;
+    height: 640px;
+    background: url("../images/surfing.png") no-repeat  center ; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; 
+
+}
+#surf_quote {
+    margin-top: -350px ;
+    height: 567px;
+}
+#surf_quote .quote{
+    background: #fff;
+    height: 567px;
+    
+
+}
+#surf_quote .quote .col-sm-4{
+    
+    margin: 100px;
+  
+}
+#surf_quote .quote .col-sm-4 h4{
+    color: black;
+    font-size:18px ;
+    font-weight: 600px;
+    text-align: center;
+}
+#surf_quote .quote .col-sm-4 h4 a{
+    color: black;
+    
+}
+
+#surf_quote .quote .col-sm-4 p{
+    font-family: 'Playfair Display', serif; 
+    font-size:22px ;
+}
+#surf_quote .quote .col-sm-4 a{
+    font-weight: 600px;
+    color: #55caff;
+}
+#surf_quote .shadow-lg{
+    
+    height: 302px;
+    width: 500px;;
+    margin-top: 267px;
+    margin-left:50px;
+}
+#surf_quote .embed-responsive-item{
+    
+    height: 302px;
+    width: 500px;;
+    margin-top: -16px;
+    margin-left:-16px;
+}
+#our-team-background{
+    
+    height: 450px;
+    width: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+#our-team-background .container{
+    margin-top: 50px;
+    font-family: 'Playfair Display', serif; 
+    width: 100%;
+    height: 100%;
+    background: url("../images/our-team.jpg") no-repeat  center ; 
+       
+}
+
+
+
+
+
+/* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu*/
+#our-team-slider .col-sm{
+    margin-top: -250px;
+}
+#our-team-slider .owl_wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+#our-team-slider .owl_content{
+    padding-left: 155px;
+    padding-right: 155px;
+}
+
+#our-team-slider .owl_wrapper .owl-item{
+   opacity: 1;
+    transform: scale(0.6);
+    -ms-transform: scale(0.1);
+    transition: all .2s;
+    -webkit-transform: all .2s;
+    z-index: 1;
+  }
+#our-team-slider .owl_wrapper .active{
+opacity: 1;
+}
+#our-team-slider .owl_wrapper .active.middle_beside{
+transform: scale(0.7);
+-ms-transform: scale(0.7);
+opacity: 1;
+/* margin: 0 -1%; */
+z-index: 2;
+}
+#our-team-slider .owl_wrapper .active.middle{
+/* transform: scale(1); */
+/* -ms-transform: scale(1); */
+/* opacity: 1; */
+/* z-index: 2; */
+}
+#our-team-slider .owl_wrapper .active.next_to_mid{
+margin-left: -1%;
+}
+#our-team-slider .owl_wrapper .prev{
+position: absolute;
+margin-left:100px ;
+margin-top:100px ;
+width: 30px;
+border-radius: 100%;
+text-align: center;
+line-height: 30px;
+color: #fff;
+background: #777;
+cursor: pointer;
+z-index: 5;
+}
+#our-team-slider  .owl_wrapper .next{
+    position: absolute;
+    margin-top: -140px;
+    margin-left: 1175px;
+    
+    
+    width: 30px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background: #777;
+    cursor: pointer;
+    z-index: 5;
+    }
+
+#our-team-slider   .owl_wrapper .next{
+/* left: calc(100% - 400px); */
+}
+.no_select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .owl-theme .owl-controls .owl-page span {
+  
+    display: none;
+}  
+    
+/*Latest updates styles*/
+#latest_update{
+    margin-top: 180px;
+}
+#latest_update .container .col-sm-12{
+ 
+    text-align: center;
+}
+#latest_update .container .col-sm-12 h4{
+    font-size: 18px;
+    text-align: center;
+}
+#latest_update .container .col-sm-12 a{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+#latest_update .container .cards{
+    margin-left:150px ;
+    margin-top: 40px;
+}
+#latest_update .col-sm-3 .updates .card{
+    width: 270px;
+    height: 345px;
+    /* border: none; */
+    border-radius: 0;
+}
+#latest_update .col-sm-3 .updates .card:hover{
+    width: 270px;
+    height: 345px;
+    border: none;
+    border-radius: 0;
+    box-shadow: black;
+}
+#latest_update .view_all{
+width: 100%;
+margin-top: 40px;
+text-align: center;
+color: white;
+}
+#latest_update .view_all a{
+    background-color:#00b0ff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    height: 47px;
+    width: 200px;
+}
+#latest_update .view_all a:hover{
+    background: #262626;
+}
+#latest_update .view_all span{
+    color: white;  
+ }
+ #latest_update .view_all span:hover{
+    color: 00b0ff;  
+ }
+/* Instagram background styles*/
+#instagram-background{
+    margin-top: 180px;
+    height: 526px;
+    width: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+#instagram-background .container{
+    font-family: 'Playfair Display', serif; 
+    width: 100%;
+    height: 100%;
+    background: url("../images/instagram-bg.jpg") no-repeat  center ; 
+       
+}
+#insta_facebook{
+    margin: 0%;
+}
+#insta_facebook .insta-fb{
+    margin-top: -465px;
+    margin-right: 400px;
+}
+#insta_facebook .insta-fb .insta-card{
+    width: 622px; 
+    height: 690px;
+    background: #fff;
+}
+
+
+#insta_facebook .facebook-bg{
+    margin-top: -420px;
+    margin-left: 60px;
+    width: 440px; 
+    height: 350px;
+   
+}
+#insta_facebook .facebook-bg .card{
+    width: 440px; 
+    height: 350px;
+    font-family: 'Playfair Display', serif; 
+  
+    background: url("../images/facebook-bg.jpg") no-repeat  center ; 
+}
+#insta_facebook .facebook-bg .card img{
+    margin-top: 95px;
+    margin-left: 50px;
+   align-content: center;
+   width: 340px; 
+   height: 215px; 
+}
+
+
+/*Footer Area*/
+
+#footer_area{
+    margin-top: -225px;
+    background: #252525;
+    padding: 40px 0;
+    color: #fff;
+    height: 425px;
+     }
