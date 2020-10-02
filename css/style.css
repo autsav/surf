@@ -110,17 +110,30 @@ body{
 
 /***********Slider Style********/
 #slider{
-    margin-top:30px ;
+    margin-bottom: 300px;
+ 
     
 }
 #slider .container{
     width: 1030px;
     height: 600px;
+    
 }
-#slider .container img{
+#slider .container .card{
+    border: 0;
+    margin-top: -210px;
     width: 1030px;
     height: 600px;
+    background: url("../images/card-background.jpg") center no-repeat   ; 
 }
+#slider .container .position-relative{
+    width: 1030px;
+    height: 600px;
+   
+
+}
+
+
 
 /*About us style*/
 #about-us{
@@ -384,35 +397,59 @@ color: white;
     background: url("../images/instagram-bg.jpg") no-repeat  center ; 
        
 }
-#insta_facebook{
-    margin: 0%;
-}
-#insta_facebook .insta-fb{
+/* Instagram Styles*/
+
+#instagram {
     margin-top: -465px;
-    margin-right: 400px;
+    margin-left: 122px;
 }
-#insta_facebook .insta-fb .insta-card{
+#instagram .card { 
     width: 622px; 
     height: 690px;
-    background: #fff;
+} 
+  
+#instagram .image-grid-container { 
+    display: grid; 
+
+    /* For 2 columns */ 
+    grid-template-columns: auto auto; 
+} 
+#instagram img { 
+    width: 311px;
+     height: 310px;
+} 
+
+
+
+#facebook .instagram{
+    width: 622px; 
+    height: 690px;
+  
+}
+#facebook .grid_image{
+    padding: 0px;
+}
+#facebook .grid_image .col img{
+    width: 317px; 
+    height: 310px;
 }
 
 
-#insta_facebook .facebook-bg{
-    margin-top: -420px;
-    margin-left: 60px;
+#facebook .facebook-bg{
+    margin-top: -650px;
+    margin-left: 1050px;
     width: 440px; 
     height: 350px;
    
 }
-#insta_facebook .facebook-bg .card{
+#facebook .facebook-bg .card{
     width: 440px; 
     height: 350px;
     font-family: 'Playfair Display', serif; 
   
     background: url("../images/facebook-bg.jpg") no-repeat  center ; 
 }
-#insta_facebook .facebook-bg .card img{
+#facebook .facebook-bg .card img{
     margin-top: 95px;
     margin-left: 50px;
    align-content: center;
@@ -425,8 +462,32 @@ color: white;
 
 #footer_area{
     margin-top: -225px;
-    background: #252525;
+    background: black;
     padding: 40px 0;
     color: #fff;
     height: 425px;
      }
+    #footer_area .designed_by{
+    margin-top: 220px;
+    margin-left: 60px;
+    }
+
+    #footer_area .footer_list{
+    margin-top: 46px;
+    margin-left: 380px;
+    }
+    #footer_area .footer_list ul{
+    list-style: none;
+    }
+    #footer_area .footer_list a{
+        color: #fff;
+        text-decoration: none;
+        }
+    #footer_area .footer_list  li:before{
+    content: url('../images/icons/list-style.png'); 
+        }
+
+     #footer_area .footer_list  .newsletter{
+        margin-top: 100px;
+        margin-left: 50px;
+        }
