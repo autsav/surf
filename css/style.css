@@ -18,6 +18,9 @@ body{
     font: bold;
     
 }
+#header_area .hide-desktop{
+    display: none;
+}
 #header_area .row{
     padding-top:35px;
 }
@@ -136,7 +139,7 @@ body{
 #slider .container .thumbs ul li{
     list-style: none;
 }
-#slider .container .thumbs small-images img{
+#slider .container .thumbs .small-images img{
     height: 70px; 
     width: 70px;
     border: none;
@@ -357,123 +360,96 @@ width: 500px;
 
 
 
-
-
 /* Our Team Slider*/
-#our-team-slider .col-sm{
+#our-team-slider .col-sm-10{
     margin-top: -250px;
+    margin-left: 50px;
 }
-#our-team-slider .owl_wrapper{
-    width: 100%;
+#our-team-slider .slide{
+    margin-left: 100px;
     overflow: hidden;
-}
-#our-team-slider .owl_content{
-    padding-left: 155px;
-    padding-right: 155px;
-}
-#our-team-slider .owl_content .frontside{
-    width:260px ;
-    height:280px ;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-#our-team-slider .owl_content .frontside img{
-   height: 105px;
-   width: 105px;
-}
-#our-team-slider .owl_content .frontside h4{
-   font-size: 18px;
-   color:#00b0ff;
- }
- #our-team-slider .owl_content .frontside p{
-    font-size: 14px;
    
-    
-  }
-  #our-team-slider .owl_content .frontside p a{
+}
+#our-team-slider .frontside{
+    margin-left:80px ;
+    width:260px ;
+    height:280px ; 
 
-    color:  #777;
+}
+#our-team-slider .frontside .card{
     
+  height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
   }
-  #our-team-slider .owl_content .frontside .logo img{
-    height: 20px;
-    width: 60px;
-    margin-top: -20px;
+  #our-team-slider .frontside .card:hover{
+    background: #55caff;    width:260px ;
+    height:280px ;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 3;
+    margin-top:-10px ;
+  
   }
  
+ 
 
-/* #our-team-slider .owl_wrapper .owl-item{
-   opacity: 1;
-    transform: scale(0.6);
-    -ms-transform: scale(0.1);
-    transition: all .2s;
-    -webkit-transform: all .2s;
-    z-index: 1;
+  #our-team-slider .frontside .card p img{
+    height: 105px;
+    width: 105px;
+    margin-left: 60px;
+    
+  
   }
-#our-team-slider .owl_wrapper .active{
-opacity: 1;
+  #our-team-slider .frontside .card .logo img{
+    margin-left: 40%;
+  }
+  #our-team-slider .paginator{
+      margin-top: -150px;
+
+  }
+  #our-team-slider .paginator .prev{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: -20px;
+    padding-top: 15px;
+ background-color:#fff;
+ display: inline-block;
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+ text-align: center;
+ color: #2946ff;
+ font-size: 15px;
 }
-#our-team-slider .owl_wrapper .active.middle_beside{
-transform: scale(0.7);
--ms-transform: scale(0.7);
-opacity: 1;
-margin: 0 -1%;
-z-index: 2;
-} */
-#our-team-slider .owl_wrapper .active.middle{
-/* transform: scale(1); */
-/* -ms-transform: scale(1); */
-/* opacity: 1; */
-/* z-index: 2; */
+#our-team-slider .paginator .next{
+    display: inline-block;
+    height: 50px;
+ width: 50px;
+ background: #fff;
+ border-radius: 50%;
+padding: 15px;
+padding-right: 2px;
+margin-left: 1125px;
+margin-top: -200px;
+color: #2946ff;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
-/* #our-team-slider .owl_wrapper .active.next_to_mid{
-margin-left: -1%;
-} */
-#our-team-slider .owl_wrapper .prev{
-position: absolute;
-margin-left:100px ;
-margin-top:100px ;
-width: 30px;
-border-radius: 100%;
-text-align: center;
-line-height: 30px;
-color: #fff;
-background: #777;
-cursor: pointer;
-z-index: 5;
-}
-#our-team-slider  .owl_wrapper .next{
-    position: absolute;
-    margin-top: -140px;
-    margin-left: 1175px;
-    
-    
-    width: 30px;
-    border-radius: 100%;
-    text-align: center;
-    line-height: 30px;
-    color: #fff;
-    background: #777;
-    cursor: pointer;
-    z-index: 5;
+
+  
+    #our-team-slider .paginator-center .prev{
+      display: block;
+      height: 20px;
+      width: 20px;
+      background: url('../img/back.png') no-repeat;
     }
 
-#our-team-slider   .owl_wrapper .next{
-/* left: calc(100% - 400px); */
-}
-/* .no_select{
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  } */
+    #our-team-slider .paginator-center .next{
+      display: block;
+      height: 20px;
+      width: 20px;
+      background: url('../img/next.png') no-repeat;
+    }
 
-  .owl-theme .owl-controls .owl-page span {
-  
-    display: none;
-}  
     
 /*Latest updates styles*/
 #latest_update{
@@ -575,20 +551,8 @@ color: white;
 
 
 
-#facebook .instagram{
-    width: 622px; 
-    height: 690px;
-  
-}
-#facebook .grid_image{
-    padding: 0px;
-}
-#facebook .grid_image .col img{
-    width: 317px; 
-    height: 310px;
-}
 
-
+/*Style Facebook*/
 #facebook .facebook-bg{
     margin-top: -650px;
     margin-left: 1050px;
@@ -645,3 +609,787 @@ color: white;
         margin-top: 100px;
         margin-left: 50px;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styling of  max-width 1400px */
+
+@media (max-width:1400px)
+{
+    #header_area .hide-desktop{
+    display: block;
+    text-align: right;
+    margin-top: -50px;
+    margin-left: -10px;
+
+}
+    #header_area .col-sm-6{
+      display: none;
+    }
+    #header_area .social_area{
+        margin-top: -10px;
+        margin-left: 1000px;
+    }
+    #shouts{
+        margin-top: -171px;
+       
+    }
+   
+
+    #our-team-slider .paginator .next{
+        margin-left: 1000px;
+    }
+
+    #facebook{
+        margin-left: -175px;
+    }
+    #footer_area .footer_list{
+        margin-left:425px;
+    }
+    #footer_area .footer_list ul{
+            width: 500px;
+    }
+    #footer_area .designed_by{
+        width: 500px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling for max-width of 992px*/
+@media (max-width:992px)
+{
+   #header_area .hide-desktop{
+       margin-left: 120px;
+   }
+
+    #header_area{
+        margin-left: -65px;
+    }
+    #header_area h4{
+        width: 200px;
+    }
+   
+    #header_area .col-sm-6{
+      display: none;
+    }
+    
+    #header_area .social_area{
+       margin-top:-50px;
+    }
+    #shouts{
+        margin-top: -148px;
+       
+    }
+    /*Slider*/
+
+    #slider{
+        margin-left: -300px;
+    }
+    #slider .container{
+        width: 900px;
+        
+    }
+    #slider .container .card-u{
+        margin-left: 50px;
+        width: 900px;
+    }
+    #slider .container .thumbs{
+        margin-right: -50px;
+    
+    }
+    #slider .container .surf-right{
+        width: 330px;
+    }
+    #slider .container .desc_title{
+        width: 330px;
+        margin-top: 10px;
+    }
+    #slider .container .description{
+        width: 330px;
+
+        margin-top: 10px;
+    }
+    #slider .container .buy_now{
+      margin-left: 80px;
+    }
+    #pageNslider{
+        margin-left: -425px;
+    }
+    #pageNslider .navigation .left{
+       margin-left: -3px;
+    }
+    #pageNslider .navigation .right{
+        margin-left: -10px;
+     }
+    #pageNslider .navigation{
+        width: 60px;
+    }
+    #pageNslider .pagination{
+        width: 42px;
+        margin-left: -30px;
+        font-size: 12px;
+        height: 35px;
+    }
+    /* About our Team Backgrund*/
+    #about-us .container{
+        background-size: 992px 370px;
+                }
+            /* Surf Quote*/
+            #surf_quote .quote h4{
+                margin-left: -125px;
+                width: 300px;
+                font-weight: bold;
+            
+            }
+            #surf_quote .quote p{
+                margin-top:30px ;
+                margin-left: -125px;
+                width: 300px;
+                
+            }
+            #surf_quote .quote .footer_readmore{
+                margin-left: -125px;
+                width: 300px;  
+            }
+            /* #surf_quote .video {
+                width: 10px;
+                margin-left: -36px;
+                background: #00b0ff; 
+            } */
+            #surf_quote .video .shadow-lg{
+                margin-left: 16px;
+                background: #00b0ff;
+                height: 202px;
+                width: 200px;; 
+            }
+            #surf_quote .video .shadow-lg .embed-responsive-item{
+                height: 250px;
+                width: 350px;; 
+            }
+            
+            /*Our Team slider*/
+                #our-team-background .container{
+                    background-size: 992px 370px;
+            }
+            #our-team-slider .container{
+                margin-left: 80px;
+            }
+                #our-team-slider .paginator .next{
+                
+                    margin-left: 650px;
+                }
+
+                /* Latest Update*/
+                #latest_update{
+                    margin-left: -100px;
+                    width: 900px;
+                }
+                #latest_update .container .cards{
+                    margin-left: 140px;
+                }
+            
+            
+                #latest_update .container .col-sm-12 h4{
+                    margin-left: 300px;
+                }
+                #latest_update .container .col-sm-3 {
+                    margin-left: 30px;
+                    
+                }
+            
+                #latest_update .col-sm-3 .updates .card{
+                    padding-right: 5px;
+                    padding-left: 5px;
+                    width: 220px;
+                    height: 345px;
+                
+                }
+                #latest_update .col-sm-3 .updates .card:hover{
+                    width: 220px;
+                    height: 345px;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                
+                }
+                #latest_update .view_all{
+                    margin-left: 145px;
+                }
+            
+            /** instagram-background ****/
+            #instagram-background .container{
+                background-size: 992px 300px;
+            }
+            #instagram .card{
+            margin-top: 85px;
+                margin-left: -20px;
+            width: 323px;
+            height: 375px;
+            }
+            #instagram .card img{
+                margin-left: -1px;
+            width: 162px;
+            height: 162px;
+            }
+
+
+                #facebook{
+                    margin-left: -500px;
+                }
+                #facebook .facebook-bg{
+                    margin-top: -340px;
+                    width: 250px; 
+                    height: 200px;
+                
+                }
+                #facebook .facebook-bg .card{
+                    width: 250px; 
+                    height: 200px;
+                
+                }
+                #facebook .facebook-bg .card img{
+                    margin-top: 24px;
+                    margin-left: 40px;
+                width: 175px; 
+                height: 150px; 
+                }
+
+                /********* Footer Area ********/
+                #footer_area{
+                    margin-top: -110px;
+                }
+                #footer_area .designed_by{
+                    margin-top: 80px;
+                    margin-left: 40px;
+                }
+                #footer_area .footer_list{
+                    margin-top: 5px;
+                    margin-left: 190px;
+                }
+                
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************Styling 768px**************************/
+@media (max-width:768px)
+{
+
+    #header_area .social_area{
+        margin-left:235px;
+        width: 200px;
+    }
+    #slider{
+        margin-left: -100px;
+    }
+    #slider .container{
+        width: 768px;
+        
+    }
+    #slider .container .card-u{
+        margin-left: -30px;
+        width: 668px;
+        height: 450px;
+
+    }
+    #slider .container .card-u .product-image img{
+        margin-top: 10px;
+        margin-left: -20px;
+        width: 330px;
+        height:350px;
+    } 
+    #slider .container .thumbs{
+
+        margin-top: -20px;
+        
+    
+    }
+    #slider .container .thumbs .small-images{
+        margin-left: -90px;
+    }
+ 
+    #slider .container .thumbs  li{
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+    
+    }
+    #slider .card-u .slider-right{
+        width: 100px;
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+    #slider .card-u .slider-right h4{
+        width: 270px;
+        font-size: 16px;
+    }
+    #slider .card-u .slider-right .ratings {
+        margin-top: -10px;
+    }
+    #slider .card-u .slider-right .ratings .star{
+        font-size: 11px;
+    }
+    #slider .card-u .slider-right .ratings .no_of_rating{
+        font-size: 11px;
+    }
+    
+    #slider .container .desc_title{
+        width: 270px;
+        margin-top: 10px;
+        font-size: 11px;
+    }
+    #slider .container .description{
+        width: 200px;
+        font-size:12px ;
+
+    }
+    #slider .container .buy_now{
+        margin-top: -5px;
+      margin-left: 110px;
+      width: 1px;
+    }
+    #slider .container  .price_and_button .amount{
+
+    font-size: 20px;
+       }
+      #slider .container  .price_and_button .buy_now a{
+
+    height: 36px;
+    width: 100px;
+    text-align: center;
+    font-size: 10px;
+   }
+   #slider .container   .view_all{
+       margin-top: -10px;
+    width: 200px;
+   }
+   #pageNslider{
+    margin-left: -998px;
+}
+
+#pageNslider .navigation .left{
+   margin-top: -7px;
+}
+
+#pageNslider .navigation{
+    width: 60px;
+    height: 25px;
+    margin-left: 60px;
+}
+#pageNslider .pagination{
+ margin-top: -2px;
+    height: 25px;
+    margin-left: 50px;
+
+}
+
+/**********About US Background*************/
+#about-us .container{
+    margin-top: -300px;
+
+    background-size: 768px 325px;
+}
+#surf_quote .quote h4{
+    text-align: right;
+    margin-top: -30px;
+
+}
+#surf_quote .quote p{
+    margin-left: -85px;
+    text-align: left;
+    font-size: 10px;    
+}
+
+#surf_quote .quote .footer_readmore{
+    margin-left: -85px;
+    width: 300px;  
+}
+#surf_quote .video {
+    width: 300px;
+    margin-left: 5px;
+}
+#surf_quote .video .shadow-lg{
+    margin-top: 250px;
+
+    margin-left:-5px ;
+    height: 220px;
+    width: 300px; 
+}
+#surf_quote .video .shadow-lg .embed-responsive-item{
+    margin-top: -18px;
+    margin-left:-16px ;
+    height: 220px;
+    width: 300px;; 
+}  
+#our-team-background .container{
+    background-size: 768px 300px;
+}
+#our-team-slider{
+    margin-left: -50px;
+}
+#our-team-slider .paginator .prev{
+    margin-left: 25px;
+ }
+ #our-team-slider .paginator .next{
+     
+     margin-left: 495px;
+ }
+
+ /*********Laest Updates***********/
+
+ #latest_update{
+
+    margin-left: -250px;
+ }
+
+ /****Instagram *****/
+ #instagram-background .container{
+     background-size: 768px 300px;
+ }
+ #instagram{
+     margin-left: 30px;
+ }
+ #facebook{
+    margin-left: -690px;
+}
+   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:600px)
+{
+    #header_area .hide-desktop{
+        display: block;
+        text-align: right;
+        margin-left: 40px;
+    
+    }
+    #header_area{
+        width: 100%;
+    }
+    #header_area .col-sm-3 h4{
+        margin-left: 50px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    #header_area .social_area{
+        margin-top: -50px;
+    }
+    /* Shouts */
+    #shouts{
+        margin-top: -219px;
+    }
+    #shouts .text-center .blockquote{
+        margin-top: 85px;
+        font-size: 35px;
+    }
+    #shouts .text-center .quote-footer{
+        font-size: 20px;
+    }
+
+    /****Slider****/
+    #slider{
+        margin-left: -100px;
+    }
+    #slider .container{
+        width: 525px;
+        
+    }
+    #slider .container .card-u{
+        margin-left: 30px;
+        width: 525px;
+        height: 450px;
+
+    }
+    #slider .container .card-u .product-image img{
+        margin-top: 10px;
+        margin-left: -20px;
+        width: 250px;
+        height: 290px;
+    } 
+    #slider .container .thumbs{
+
+        margin-top: 2px;
+        margin-left: -80px;
+    
+    }
+    #slider .container .thumbs .small-images{
+        margin-left: -40px;
+    }
+ 
+    #slider .container .thumbs  li{
+        display: inline-flex;
+        width: 60px;
+        height: 60px;
+    
+    }
+    #slider .card-u .slider-right{
+        width: 50px;
+        margin-left: -5px;
+        margin-top: -5px;
+    }
+    #slider .card-u .slider-right h4{
+        width: 199px;
+        font-size: 13px;
+    }
+    #slider .card-u .slider-right .ratings {
+        margin-top: -10px;
+    }
+    #slider .card-u .slider-right .ratings .star{
+        font-size: 9px;
+    }
+    #slider .card-u .slider-right .ratings .no_of_rating{
+        font-size: 9px;
+    }
+    
+    #slider .container .desc_title{
+        width: 200px;
+        margin-top: 10px;
+        font-size: 8px;
+    }
+    #slider .container .description{
+        width: 200px;
+        font-size:10px ;
+
+    }
+    #slider .container .buy_now{
+        margin-top: -35px;
+      margin-left: 110px;
+      width: 1px;
+    }
+    #slider .container  .price_and_button .amount{
+
+    font-size: 20px;
+       }
+      #slider .container  .price_and_button .buy_now a{
+
+    height: 36px;
+    width: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+   }
+   #slider .container   .view_all{
+       margin-top: 50px;
+    width: 200px;
+   }
+   #pageNslider{
+    margin-left: -998px;
+}
+
+#pageNslider .navigation .left{
+   margin-top: -7px;
+}
+
+#pageNslider .navigation{
+    width: 60px;
+    height: 25px;
+}
+#pageNslider .pagination{
+ margin-top: -2px;
+    height: 25px;
+}
+
+  /* About our Team Backgrund*/
+  #about-us .container{
+    margin-top: -300px;
+
+    background-size: 600px 325px;
+}
+#surf-background {
+    margin-top: -500px;
+    background-size: 600px 250px;
+}
+#surf_quote{
+    margin-top: -325px;
+}
+#surf_quote .quote .container{
+    width: -10px;
+}
+#surf_quote .quote h4{
+    margin-top: -75px;
+    margin-left: -100px;
+    width: 300px;
+    font-size: 100px;
+    font-weight: bold;
+   
+}
+#surf_quote .quote p{
+    font-size:5px;
+    margin-top: -10px;
+    margin-left: -75px;
+   
+    
+}
+#surf_quote .quote .footer_readmore{
+    margin-left: -75px;
+    width: 300px;  
+}
+#surf_quote .video {
+    width: 250px;
+    margin-left: 5px;
+}
+#surf_quote .video .shadow-lg{
+    margin-top: 70px;
+
+    margin-left:-5px ;
+    height: 202px;
+    width: 250px; 
+}
+#surf_quote .video .shadow-lg .embed-responsive-item{
+    margin-top: -16px;
+    margin-left:-16px ;
+    height: 200px;
+    width: 250px;; 
+}  
+
+#our-team-background .container{
+    background-size: 600px 200px;
+    margin-top: -175px;
+}
+#our-team-slider{
+    margin-top: 25px;
+    margin-left: -115px;
+}
+#our-team-slider .paginator .prev{
+   margin-left: 25px;
+}
+#our-team-slider .paginator .next{
+    
+    margin-left: 485px;
+}
+
+#latest_update{
+    margin-left: -350px;
+}
+#latest_update .container .row h4{
+    margin-left: 400px;
+}
+#instagram-background .container{
+    margin-top: -125px;
+
+    background-size: 600px 325px;
+}
+#instagram .card{
+    margin-top: 70px;
+    width:200px;
+    height: 275px;
+    margin-left: 55px;
+
+}
+#instagram .card img{
+    margin-left: -1px;
+    width:101px;
+    height: 110px;
+}
+#instagram .card .follow-us img{
+    margin-top: -20px;
+}
+#facebook .container{
+    margin-top: 100px;
+    margin-left: -50px;
+}
+#facebook .container .facebook-bg{
+    height: 10px;
+}
+#footer_area{
+    width: 600px;
+}
+#footer_area .footer_list{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+#footer_area .designed_by{
+   font-size: 10px;
+   margin-left: 75px;
+}
+#footer_area .footer_list ul li{
+  font-size: 10px;
+}
+
+
+  
+}
